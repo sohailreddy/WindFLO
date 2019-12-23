@@ -27,7 +27,7 @@ The repository contains two options for running WindFLO.
 
 ### Prerequisites
 
-The framework only requires libc++ and libgfortran. It is compiled and linked using the g++ compiler.
+The framework only requires libgfortran. It is compiled and linked using the g++ compiler.
 
 
 ### Installing
@@ -53,7 +53,7 @@ WindFLO requires an input file containing all the parameters needed to run the m
 
 ## Contributing
 
-The WindFLO framework was developed to accelerate the dissemination of results and development of model for wind farm analysis. Using the precompiled library allows users to develop and incorporate their own wake models into the WindFLO framework. The user defined wake model and wake merge scheme can be added to the *userDefined.cpp* and linked with the WindFLO library. A user-defined cost model can also be included in the same source file. The *userDefined.cpp* in this repository provides an example on how to incorporate a new wake model.
+The WindFLO framework was developed to accelerate the dissemination of results and development of models for wind farm analysis. Using the precompiled library allows users to develop and incorporate their own wake models into the WindFLO framework. The user defined wake models and wake merge schemes can be added to the *userDefined.cpp* and linked with the WindFLO library. A user-defined cost model can also be included in the same source file. The *userDefined.cpp* in this repository provides an example on how to incorporate a new wake model.
 
 
 ## Authors
