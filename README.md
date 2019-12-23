@@ -1,6 +1,7 @@
 # WindFLO - A Framework for Fast Wind Farm Layout Optimization
 Copyright, 2019 Sohail R. Reddy  (sredd001@fiu.edu)
 
+## Version v1.0.0
 
 
 The WindFLO model incorporates the following advancements:
@@ -16,6 +17,7 @@ The WindFLO model incorporates the following advancements:
 * Wind farm area is computed as the area of convex hull.
 
 
+![TurbineOverLand](/images/TurbineOverLand.png) ![WakeCone](/images/WakeCone.png)
 
 ## Getting Started
 
@@ -59,3 +61,8 @@ The WindFLO framework was developed to accelerate the dissemination of results a
 ## Authors
 
 * *Sohail R. Reddy
+
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE.md](LICENSE.md) file for details
