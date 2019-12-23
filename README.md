@@ -60,7 +60,7 @@ The WindFLO framework was developed to accelerate the dissemination of results a
 
 ## Authors
 
-* *Sohail R. Reddy
+**Sohail R. Reddy
 
 
 ## License
