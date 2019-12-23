@@ -3,7 +3,7 @@ Copyright, 2019 Sohail R. Reddy  (sredd001@fiu.edu)
 
 ## Version v1.0.0
 
-![WindFarmLayout](/images/WindFarmLayout.png){:height="10%" width="10%"}
+![WindFarmLayout](/images/WindFarmLayout.png) <img src="/images/WindFarmLayout.png" width="48">
 
 The WindFLO model incorporates the following advancements:
 
