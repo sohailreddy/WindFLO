@@ -3,6 +3,7 @@ Copyright, 2019 Sohail R. Reddy  (sredd001@fiu.edu)
 
 ## Version v1.0.0
 
+![WindFarmLayout](/images/WindFarmLayout.png| width=200)
 
 The WindFLO model incorporates the following advancements:
 
@@ -17,7 +18,7 @@ The WindFLO model incorporates the following advancements:
 * Wind farm area is computed as the area of convex hull.
 
 
-![TurbineOverLand](/images/TurbineOverLand.png) ![WakeCone](/images/WakeCone.png)
+![TurbineOverLand](/images/TurbineOverLand.png| width=100) ![WakeCone](/images/WakeCone.png| width=100)
 
 ## Getting Started
 
