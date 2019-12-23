@@ -65,4 +65,4 @@ The WindFLO framework was developed to accelerate the dissemination of results a
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details
