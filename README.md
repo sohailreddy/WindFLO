@@ -3,7 +3,7 @@ Copyright, 2019 Sohail R. Reddy  (sredd001@fiu.edu)
 
 ## Version v1.0.0
 
-<img src="/images/WindFarmLayout.png" width="250">
+<img src="/images/WindFarmLayout.png" width="700">
 
 The WindFLO model incorporates the following advancements:
 
@@ -17,7 +17,7 @@ The WindFLO model incorporates the following advancements:
 * Rotor diameter and tower height dependent cost models are available.
 * Wind farm area is computed as the area of convex hull.
 
-<img src="/images/TurbineOverLand.png" width="150"> <img src="/images/WakeCone.png" width="150">
+<img src="/images/TurbineOverLand.png" width="500"> <img src="/images/WakeCone.png" width="500">
 
 ## Getting Started
 
