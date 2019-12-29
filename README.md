@@ -17,7 +17,7 @@ The WindFLO model incorporates the following advancements:
 * Rotor diameter and tower height dependent cost models are available.
 * Wind farm area is computed as the area of convex hull.
 
-<img src="/images/TurbineOverLand.png" width="400"> <img src="/images/WakeCone.png" width="500">
+<img src="/images/TurbineOverLand.png" width="350"> <img src="/images/WakeCone.png" width="500">
 
 ## Getting Started
 
