@@ -58,7 +58,7 @@ WindFLO requires an input file containing all the parameters needed to run the m
 If you use WindFLO, please cite the following paper
 ```
 S.R.Reddy, "Wind Farm Layout Optimization (WindFLO) : Optimization for Maximum Power Generation 
-and Efficiency," *Renewable Energy, 2020
+and Efficiency," Renewable Energy, 2020
 ```
 
 ## Contributing
