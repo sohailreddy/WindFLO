@@ -1,4 +1,4 @@
-# WindFLO - A Framework for Fast Wind Farm Layout Optimization
+# WindFLO - An Advanced Framework for Fast Wind Farm Analyis and Optimization
 Copyright, 2019 Sohail R. Reddy  (sredd001@fiu.edu)
 
 ## Version v1.0.0
