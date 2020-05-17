@@ -8,7 +8,7 @@ Copyright, 2019 Sohail R. Reddy  (sredd001@fiu.edu)
 The WindFLO model incorporates the following advancements:
 
 * Local terrain elevation is modeled.
-* The atmospheric wind velocity is modeled using the Log-Law and the Power-Law.
+* The atmospheric wind velocity is modeled using the Log-Law, the Power-Law and Deaves-Harris model.
 * Six different analytical wake models are available
 * Four different wake merging schemes are available
 * The properties of each turbine (diameter, height, power curve, etc.) can be different. 
@@ -39,10 +39,10 @@ The framework only requires libgfortran. It is compiled and linked using the g++
 * If the precompiled library is being used, the user-defined source files also need to be compiled and linked. Simply running the make command in the downloaded directories will compile, link and create the WindFLO executable. No further installation is needed. 
 
 ```
-cd libs/osx; make
+cd release; make OS=OSX MAIN=main
 ```
 ```
-cd libs/lnx; make
+cd release; make OS=LINUX MAIN=main
 ```
 
 ### Running WindFLO
@@ -50,7 +50,7 @@ cd libs/lnx; make
 WindFLO requires an input file containing all the parameters needed to run the model. The parameters that need to be specified are given in the sample input file (input/WindFLO.dat) and the manual. The input directory contains the input files needed to run WindFLO. The executable can be ran using the command
 
 ```
-./WindFLO /path/to/the/input/file /path/where/you/want/the/result/file
+./WindFLO_OSX /path/to/the/input/file /path/where/you/want/the/result/file
 ```
 
 ## How to Cite
