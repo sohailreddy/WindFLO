@@ -1,0 +1,57 @@
+/*
+
+	Copyright 2019, Sohail R. Reddy
+	email: sredd001@fiu.edu
+	www.sohailreddy.com
+
+*/
+
+&WindFLO_data
+
+	batch = .false.,
+
+	rho = 1.2d0,
+	modelVelocity = 10.0d0,0.0d0,0.0d0 ,
+	
+	windModel = 'constant'	, ! wind profile model... choice of constant, log, power
+	gaussOrder = 4,	  ! order of gauss integration
+	monteCarloPts = 1000,	! number of points for monte carlo integration
+	
+	referenceHeight = 0.1,
+	surfaceRoughness = 0.1d0 ,
+	turbulenceIntensity = 0.083d0,	! Larsen's wake model
+	
+	
+	wakeModel = 'Frandsen'	,	! available models are Jensen, Frandsen, Larsen, Ishihara, BP, XA
+	wakeMergeModel = 'Quadratic'	,		! available models are Linear, Quadratic, Energy, DWM
+	
+	wakeExpansionCoeff = 0.045d0, 0.0315d0, 	!	wake expansion coefficient
+	
+	coe = 1230.0d0,		! cost of energy
+	
+
+!	Terrain information
+	terrainModel = 'RBF',
+	terrainFile = 'terrain.dat',
+	powerIDW = 4,
+	rbfKernel = 1,
+	shapeFactor = 5.0d0,
+
+!	Octree information
+	octreeMaxPts = 10
+	octreeDepth = 10
+
+	
+	turbineFiles ='turbine1.dat', 
+				  'turbine2.dat',
+				  'turbine3.dat',				  
+				  'turbine4.dat',
+			  				  
+/
+
+
+
+
+
+
+
