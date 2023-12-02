@@ -177,9 +177,10 @@ class WindFLO:
 			self.ReadResultsFile(resFile)
 			
 
-		libPath = kwargs.get('libDir', '')
+		libPath = kwargs.get('libDir', './')
+		libName = kwargs.get('libName', 'libWindFLO.so')
 		if libPath != '':
-			self.libWindFLO = cdll.LoadLibrary('./'+libPath+'libWindFLO.so')
+			self.libWindFLO = cdll.LoadLibrary(os.path.join(libPath,libName))
 
 
 	def __del__(self):
@@ -548,7 +549,7 @@ class WindFLO:
 
 	def plotWindFLO2D(self, fig, plotVariable = 'V', scale = 1.0, title = ''):
 		
-		ax = plt.subplot(1,1,1)
+		ax = fig.add_subplot()
 				
 		ax.set_xlabel('x [m]', fontsize=16, labelpad = 5)
 		ax.set_ylabel('y [m]', fontsize=16, labelpad = 5)	

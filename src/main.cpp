@@ -15,8 +15,9 @@
 
 
 #include "API.hpp"
+#include "WindFLO.hpp"
 
-
+/*
 int main(int argc, char** argv) {
 	std::cout << "Copyright 2019, Sohail R. Reddy   (sredd001@fiu.edu)" << std::endl;
 	std::string inFile;
@@ -31,3 +32,33 @@ int main(int argc, char** argv) {
 	windFLO.run();	
 	windFLO.write(outFile);		
 }
+*/
+
+
+
+
+int main(int argc, char** argv) {
+
+
+	std::cout << "Copyright 2019, Sohail R. Reddy   (sredd001@fiu.edu)" << std::endl;
+
+	std::string inFile;
+	std::string outFile;
+	
+	if(argc > 1)
+		inFile = argv[1];
+	if(argc > 2)
+		outFile = argv[2];
+
+	WindFLO windFLO(inFile);
+
+	windFLO.setup();
+	windFLO.run();	
+	windFLO.WriteResults(outFile);
+}
+
+
+
+
+
+
