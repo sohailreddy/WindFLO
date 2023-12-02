@@ -31,10 +31,10 @@ The framework requires libgfortran and f90nml (for Python API). It is compiled a
 
 ### Installing
 
-* Enter the 'src/' directory and update the c++ and Fortran compilers in the Makefile, then run make. This will create the executable, the static and dynamic libraries in the 'release/' and 'API/' directories. 
+* Enter the 'src/' directory and update the c++ and Fortran compilers in the Makefile, then run make with your OS. This will create the executable, the static and dynamic libraries in the 'release/' and 'API/' directories for your OS. 
 
 ```
-cd src; make
+cd src; make OS=OSX
 ```
 
 ### Running WindFLO
