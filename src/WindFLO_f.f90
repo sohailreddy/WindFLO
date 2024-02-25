@@ -136,22 +136,6 @@ subroutine ReadInput(inFileName) bind(C,name='ReadInput_')
 	character(len = 1000) :: fileName = ''
 	integer i
 
-	namelist / 	WindFLO_data / &
-				nTurbines, batch,								&
-				rho, turbulenceIntensity,						&
-				windModel, modelVelocity, 						&
-				surfaceRoughness, referenceHeight,				&
-				wakeModel, wakeMergeModel, wakeExpansionCoeff,	&
-				gaussOrder, monteCarloPts, 						&
-				turbineFiles,									&
-				coe,											&
-				nNearest, rbfKernel, shapeFactor, powerIDW,		&
-				terrainModel, terrainFile, windRoseFile,					&
-!	Misc Parameters
-				octreeDepth, octreeMaxPts
-				
-
-
 	integer nTurbines;
 	logical batch;
 
@@ -187,6 +171,21 @@ subroutine ReadInput(inFileName) bind(C,name='ReadInput_')
 	character(len = 1000) :: terrainFile = ''
 	character(len = 1000) :: windRoseFile = ''
 
+	!------------------------------------------------
+	namelist / 	WindFLO_data / &
+				nTurbines, batch,								&
+				rho, turbulenceIntensity,						&
+				windModel, modelVelocity, 						&
+				surfaceRoughness, referenceHeight,				&
+				wakeModel, wakeMergeModel, wakeExpansionCoeff,	&
+				gaussOrder, monteCarloPts, 						&
+				turbineFiles,									&
+				coe,											&
+				nNearest, rbfKernel, shapeFactor, powerIDW,		&
+				terrainModel, terrainFile, windRoseFile,					&
+!	Misc Parameters
+				octreeDepth, octreeMaxPts
+	!------------------------------------------------				
 
 !	if(WindFLO_input%alreadyRead) then
 !		return
@@ -241,14 +240,8 @@ subroutine readTurbineData(inputFile, inTurbine)
 	character(*) :: inputFile
 	type(turbineProps) :: inTurbine
 	integer nCount, i, j, ierr
-			
-	namelist / turbine_data /&
-			turbineNum,	name, fictitious,		&
-			position, height, diameter, radius,	&
-			orientation, yaw, ratedPower,		&
-			CpCurve, CtCurve
-			
-	
+						
+						
 	character(len = 30) :: name 		! name of turbine
 	integer :: turbineNum = undefined_i	! the ith turbine
 	real(8) :: position(3)				! x, y, z position of turbine
@@ -262,7 +255,15 @@ subroutine readTurbineData(inputFile, inTurbine)
 	logical :: fictitious				! is the turbine imaginary
 	logical :: yaw						! is the turbine able to yaw
 	
+	!------------------------------------------------
+	namelist / turbine_data /&
+			turbineNum,	name, fictitious,		&
+			position, height, diameter, radius,	&
+			orientation, yaw, ratedPower,		&
+			CpCurve, CtCurve	
+	!------------------------------------------------
 	
+		
 	if(trim(inputFile) == '') return
 	
 	turbineNum = undefined_i	! the ith turbine
